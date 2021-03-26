@@ -14,22 +14,22 @@ function JobScreen({ match }) {
       <Row>
         <ListGroup variant="flush">
           <ListGroup.Item>
-            <h3>{job.JobTitle}</h3>
+            <h3>{job.job_title}</h3>
           </ListGroup.Item>
 
           <ListGroup.Item>
-            <div> Company: {job.CompanyName}</div>
+            <div> Company: {job.company}</div>
           </ListGroup.Item>
 
           <ListGroup.Item>
-            <div> Location: {job.Location}</div>
+            <div> Location: {job.location}</div>
           </ListGroup.Item>
         </ListGroup>
       </Row>
 
       <Row>
         <Card className="my-3 p-3 round">
-        <div dangerouslySetInnerHTML={{ __html: job.JobDescription }} />
+        <div dangerouslySetInnerHTML={{ __html: job.description }} />
         </Card>
       </Row>
     </div>
